@@ -6,5 +6,5 @@ Router.route('/product/details')
   .post(Controller.post)
   .put(Controller.update)
   .delete(Controller.delete);
-
+  
 module.exports = Router;

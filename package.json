@@ -13,7 +13,7 @@
     ]
   },
   "scripts": {
-    "start": "nodemon server/server.js",
+    "start": "NODE_ENV=production nodemon server/server.js",
     "build": "webpack -w",
     "test": "jest",
     "seed": "node --max-old-space-size=4096 database/seed/seed.js",
@@ -37,12 +37,13 @@
     "iconv-lite": "^0.4.24",
     "mysql": "^2.16.0",
     "mysql2": "^1.6.1",
-    "newrelic": "^4.11.0",
     "nodemon": "^1.18.7",
     "path": "^0.12.7",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-svg": "^7.2.0",
+    "redis": "^2.8.0",
+    "redis-server": "^1.2.2",
     "sequelize": "^4.41.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.22.0"
